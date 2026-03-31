@@ -185,6 +185,7 @@
               name="contact"
               data-netlify="true"
             >
+              <input type="hidden" name="contact-form" value="Contact Form" />
               <div>
                 <label class="cta-form-label" for="input-name"
                   >Full Name <span class="label-required">*</span>
@@ -194,6 +195,7 @@
                   id="input-name"
                   class="input-text"
                   name="fullname"
+                  value=""
                   required
                 />
               </div>
@@ -207,6 +209,7 @@
                   id="input-email"
                   class="input-text"
                   name="emailaddress"
+                  value=""
                   required
                 />
               </div>
@@ -220,6 +223,7 @@
                   id="input-phone"
                   class="input-text"
                   name="phonenumber"
+                  value=""
                   required
                 />
               </div>
@@ -233,6 +237,7 @@
                   id="input-company"
                   class="input-text"
                   name="companyname"
+                  value=""
                   required
                 />
               </div>
@@ -243,8 +248,8 @@
                   type="radio"
                   class="input-radio"
                   id="input-alaska"
-                  value="Alaska"
                   name="location"
+                  value="Alaska"
                   checked
                 />
                 <label for="input-alaska" class="radio-label">Alaska</label>
@@ -253,8 +258,8 @@
                   type="radio"
                   class="input-radio"
                   id="input-texas"
-                  value="Texas"
                   name="location"
+                  value="Texas"
                 />
                 <label for="input-texas" class="radio-label">Texas</label>
               </fieldset>
@@ -268,6 +273,7 @@
                   class="input-message"
                   rows="7"
                   name="textmessage"
+                  value=""
                   required
                 ></textarea>
               </div>
