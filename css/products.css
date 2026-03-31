@@ -1,0 +1,24 @@
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3.2rem;
+  row-gap: 4.4rem;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: center;
+  /* padding: */
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+  border: 2px solid #ddd;
+}
+
+.service-icon {
+  font-size: 6.4rem;
+  color: #742722;
+}

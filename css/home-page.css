@@ -1,0 +1,287 @@
+/* REUSABLE IN THE PAGE ... */
+
+.link-to-page:link,
+.link-to-page:visited {
+  font-size: 1.6rem;
+  /* margin-bottom: 5.6rem; */
+  /* text-transform: uppercase; */
+  transition: all 200ms;
+  border-bottom: 1px solid rgba(116, 39, 34, 0);
+  text-align: center;
+}
+
+.link-to-page:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #742722;
+}
+
+/*************************************/
+/************** SECTION HERO (DONE) *************/
+/*************************************/
+
+.section-hero {
+  position: relative;
+  height: 100vh;
+  background-image:
+    linear-gradient(rgb(34, 34, 34, 0.6), rgb(34, 34, 34, 0.6)),
+    url("../img/hero-min.webp");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-text-block {
+  position: absolute;
+  width: 90rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  text-align: center;
+  color: #fff;
+}
+
+.hero-description {
+  font-family: "Cinzel", serif;
+  text-transform: lowercase;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+.ph-minus {
+  display: none;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-text {
+  font-family: "Cinzel", serif;
+  text-transform: lowercase;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #fff;
+  justify-content: center;
+}
+
+.btn-hero-cta:link,
+.btn-hero-cta:visited {
+  border: none;
+  /* box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075); */
+}
+
+/*************************************/
+/****************** HOW IT WORKS ******************/
+/*************************************/
+
+.step-item {
+  background-color: #f8f9fa;
+  border-radius: 2px;
+  padding: 3.2rem 4.4rem;
+}
+
+.step-number {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #bbb;
+}
+
+.step-description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+/*************************************/
+/****************** ABOUT US ******************/
+/*************************************/
+
+.about--grid {
+  display: grid;
+  grid-template-columns: 45fr 54fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8rem;
+}
+
+.about-img {
+  border: 2px solid #742722;
+  border-radius: 2px;
+}
+
+.about-text-box {
+  padding-top: 1.2rem;
+}
+
+.about-description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.specialty-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.4rem;
+  /* row-gap: 0.4rem; */
+  row-gap: 1.6rem;
+  list-style: none;
+  margin-bottom: 1.2rem;
+}
+
+.specialty-list li {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  /* border: 2px solid #ccc; */
+}
+
+.specialty-list li .ph-check-fat {
+  display: inline;
+  color: #227427;
+  padding-right: 6px;
+}
+
+.specialty-list li a:link,
+.specialty-list li a:visited {
+  display: flex;
+  /* display: grid;
+  grid-template-columns: 1fr 8fr 1fr; */
+  color: #333;
+  /* background-color: #fff;
+  padding: 1.2rem 0.8rem; */
+  cursor: text;
+}
+
+.specialty-list li a:link .show-on-hover,
+.specialty-list li a:visited .show-on-hover {
+  position: relative;
+  opacity: 0;
+  left: -5px;
+  transition: all 300ms;
+}
+
+/* .specialty-list li a:hover .show-on-hover {
+  opacity: 1;
+  left: 0px;
+} */
+
+/**************************/
+/* LEADERSHIP SECTION */
+/**************************/
+
+.section-manufacturers {
+  /* padding: 4.4rem 0; */
+  /* padding-bottom: 0; */
+}
+
+.section-title {
+  text-align: center;
+}
+.heading-manufacturers {
+  font-size: 2rem;
+  font-family: "Cinzel";
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.7);
+  padding-bottom: 5.6rem;
+}
+.subheading {
+  /* color: #333; */
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 3.2rem;
+  /* filter: brightness(0); */
+  /* filter: grayscale(100); */
+  /* opacity: 70%; */
+}
+
+/*************************************/
+/****************** ABOUT US ******************/
+/*************************************/
+.section-testimonials {
+  /* padding: 0; */
+  background-color: #f8f9fa;
+}
+
+.testimonials-carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 90rem;
+  height: 35rem;
+
+  margin: 0 auto;
+  overflow: hidden;
+  /* padding:; */
+}
+
+.testimonial-item {
+  position: absolute;
+  padding: 2.4rem 8rem;
+  width: 80rem;
+  background-color: transparent;
+  transform: translateX(0);
+  transition: transform 800ms;
+}
+.testimonial-header {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+.client-img {
+  width: 9.6rem;
+  border-radius: 50%;
+  /* margin-bottom: 1.2rem; */
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  width: auto;
+}
+
+.testimonial-author {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+.author-company {
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.btn--caret {
+  position: absolute;
+  top: 50%;
+  font-size: 2.4rem;
+  height: 4.4rem;
+  width: 4.4rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #555;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color 300ms,
+    color 50ms;
+}
+
+.btn--caret:hover {
+  background-color: rgba(223, 224, 225, 0.705);
+  color: #f8f9fa;
+}
+
+.btn--caret-left {
+  left: 0;
+}
+.btn--caret-right {
+  right: 0;
+}

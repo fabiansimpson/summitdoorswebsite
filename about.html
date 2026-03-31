@@ -1,0 +1,499 @@
+<!-- 
+maybe remove the 'leadership' text and put it in the cards as what their function is (founder, manager, etc)
+
+Dont make different sections for the employee functions like project management and estimator:
+-- Put the function of the employees in the employee card !
+
+
+
+I gotta make some decisions to bring something to the table on tuesday. Doesn't have to be perfect. I just want to build something. Good enough is good enough.
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general-components.css" />
+    <link rel="stylesheet" href="css/general-elements.css" />
+    <link rel="stylesheet" href="css/about-us-page.css" />
+    <link rel="stylesheet" href="css/mediaquery.css" />
+
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <!--  HEADER (DONE)-->
+    <header id="header">
+      <div class="header-contact">
+        <div class="header-contact-details container">
+          <small class="header-note"
+            >Developer's note: Website is not yet responsive for smaller
+            screens.
+            <a href="#" class="contact-item"
+              >Click here for more info
+              <i class="ph ph-arrow-right ph--mg-top"></i> </a
+          ></small>
+          <a href="tel:+1-979-325-8050" class="contact-item"
+            ><i class="ph ph-phone ph--mg-top"></i> +1-979-325-8050</a
+          >
+          <!-- PLACEHOLDER EMAILADDRESS -->
+          <a
+            href="mailto:info@summitdoors.net"
+            class="contact-item"
+            target="_blank"
+            ><i class="ph ph-envelope-simple ph--mg-top"></i>
+            info@summitdoors.net</a
+          >
+          <ul class="social-links-list">
+            <li>
+              <a
+                href="#"
+                class="contact-item socials-link"
+                aria-label="Link to Whatsapp"
+              >
+                <i class="ph ph-whatsapp-logo social-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="contact-item socials-link"
+                aria-label="Link to Whatsapp"
+                ><i class="ph ph-facebook-logo social-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="contact-item socials-link"
+                aria-label="Link to Whatsapp"
+                ><i class="ph ph-linkedin-logo social-icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <a href="index.html">
+          <img
+            src="img/summitdoors-logo-min.png"
+            class="logo"
+            alt="Logo SummitDoors"
+        /></a>
+        <ul class="nav-items">
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="#" class="nav-item active">About us</a></li>
+          <li><a href="products.html" class="nav-item">Products</a></li>
+          <li><a href="#" class="nav-item">Projects</a></li>
+          <li><a href="#" class="nav-item">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="section-our-story section-bg js-hero-el">
+        <div class="container grid grid--2-cols">
+          <img src="/img/about--our-story-min.webp" class="img" />
+
+          <div class="text-block">
+            <h1 class="heading-primary page-heading margin-bottom-sm">
+              Our story
+            </h1>
+
+            <p class="about-us-description">
+              Stewart Barnes stated the company in 1987. He has strong
+              relationships with the GC’s in the Anchorage Market in Alaska.
+              Aarika, Stewarts daughter is the General Manager and Project
+              Manager here in the Texas Market.
+            </p>
+            <p class="about-us-description">
+              Our Primary market is College Station area, however we work with
+              Vaughn on a number of HHS and MDACC projects in Houston. We have
+              strong relationships with our
+              <a href="#" class="link">General Contractors</a> and are
+              recognized as highly involved in the projects. We see it as our
+              responsibility to work on mitigating any Risk you as the GC may
+              encounter, by identifying risk related to Doors, Frames and
+              Hardware before they are encountered. We work hard to get you the
+              best value and a great long-term solution.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-locations">
+        <div class="container">
+          <span class="subheading">Locations</span>
+          <h2 class="heading-secondary">Serving Alaska and Texas</h2>
+          <!-- <article class="team-card"> -->
+          <div class="grid grid--2-cols">
+            <article class="location-item">
+              <div class="img-box">
+                <img
+                  src="/img/about--team-alaska-min.webp"
+                  class="location-img"
+                />
+              </div>
+              <div class="location-body">
+                <p class="location-title">Regional Office Alaska</p>
+                <p class="location-address">
+                  7950 King St, Anchorage, AK 99518
+                </p>
+                <p class="location-links margin-bottom-md">
+                  <a href="tel:+19075227757" class="link"
+                    ><i class="ph ph-phone ph--mg-top"></i> +1-907-522-7757</a
+                  >
+
+                  <a
+                    href="mailto:info@summitdoors.net"
+                    class="link"
+                    target="_blank"
+                    ><i class="ph ph-envelope-simple ph--mg-top"></i>
+                    info@summitdoors.net</a
+                  >
+                </p>
+                <div class="embed-map-responsive">
+                  <div class="embed-map-container">
+                    <iframe
+                      class="embed-map-frame"
+                      frameborder="0"
+                      scrolling="no"
+                      marginheight="0"
+                      marginwidth="0"
+                      src="https://maps.google.com/maps?width=400&height=200&hl=en&q=7950%20King%20St%2C%20Anchorage%2C%20AK%2099518&t=&z=3&ie=UTF8&iwloc=B&output=embed"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="location-item">
+              <div class="img-box">
+                <img
+                  src="/img/about--team-texas-min.webp"
+                  class="location-img"
+                />
+              </div>
+              <div class="location-body">
+                <p class="location-title">Regional Office Texas</p>
+                <p class="location-address">
+                  8133 Wickson Ridge Dr, Bryan, TX 77808
+                </p>
+                <p class="location-links margin-bottom-md">
+                  <a href="tel:+19075227757" class="link"
+                    ><i class="ph ph-phone ph--mg-top"></i> +1-979-325-8050</a
+                  >
+
+                  <a
+                    href="mailto:info@summitdoors.net"
+                    class="link"
+                    target="_blank"
+                    ><i class="ph ph-envelope-simple ph--mg-top"></i>
+                    info@summitdoors.net</a
+                  >
+                </p>
+                <div class="embed-map-responsive">
+                  <div class="embed-map-container">
+                    <iframe
+                      class="embed-map-frame"
+                      frameborder="0"
+                      scrolling="no"
+                      marginheight="0"
+                      marginwidth="0"
+                      src="https://maps.google.com/maps?width=400&height=200&hl=en&q=8133%20Wickson%20Ridge%20Dr%2C%20Bryan%2C%20TX%2077808&t=&z=3&ie=UTF8&iwloc=B&output=embed"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- </article> -->
+        </div>
+      </section>
+
+      <section class="section-leadership section-bg">
+        <div class="container">
+          <h2 class="heading-secondary margin-bottom-md center-text">
+            Leadership Team
+          </h2>
+
+          <div class="leadership grid grid--4-cols">
+            <figure class="leadership-card">
+              <img src="img/leadership/uiface-2.jpg" class="leadership-img" />
+              <div class="leadership-card-body">
+                <h4 class="leadership-name">Jacob Chuck</h4>
+                <h5 class="function">Founder & President</h5>
+              </div>
+            </figure>
+            <figure class="leadership-card">
+              <img src="img/leadership/uiface-3.jpg" class="leadership-img" />
+              <div class="leadership-card-body">
+                <h4 class="leadership-name">Olivia Bentley</h4>
+                <h5 class="function">Vice-president</h5>
+              </div>
+            </figure>
+            <figure class="leadership-card">
+              <img src="img/leadership/uiface-1.jpg" class="leadership-img" />
+              <div class="leadership-card-body">
+                <h4 class="leadership-name">Evelyn Boston</h4>
+                <h5 class="function">General manager & Product manager</h5>
+              </div>
+            </figure>
+
+            <figure class="leadership-card">
+              <img src="img/leadership/uiface-4.jpg" class="leadership-img" />
+              <div class="leadership-card-body">
+                <h4 class="leadership-name">William McDonald</h4>
+                <h5 class="function">General manager</h5>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta" id="section-cta">
+        <div class="container">
+          <div class="cta-form-box">
+            <span class="subheading">Contact us</span>
+            <h2 class="heading-secondary">Get in touch</h2>
+            <small
+              >Developer's note: you can send any feedback through this
+              form.</small
+            >
+            <form
+              class="cta-form"
+              method="POST"
+              name="sign-up"
+              data-netlify="true"
+            >
+              <div>
+                <label class="cta-form-label" for="input-name"
+                  >Full Name <span class="label-required">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="input-name"
+                  class="input-text"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="cta-form-label" for="input-email"
+                  >Email <span class="label-required">*</span></label
+                >
+                <input
+                  type="email"
+                  id="input-email"
+                  class="input-text"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="cta-form-label" for="input-phone"
+                  >Phone <span class="label-required">*</span></label
+                >
+                <input
+                  type="tel"
+                  id="input-phone"
+                  class="input-text"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="cta-form-label" for="input-company"
+                  >Company <span class="label-required">*</span></label
+                >
+                <input
+                  type="text"
+                  id="input-company"
+                  class="input-text"
+                  required
+                />
+              </div>
+
+              <fieldset>
+                <legend class="cta-form-legend">Location:</legend>
+                <input
+                  type="radio"
+                  class="input-radio"
+                  id="input-alaska"
+                  value="Alaska"
+                  name="location"
+                  checked
+                />
+                <label for="input-alaska" class="radio-label">Alaska</label>
+
+                <input
+                  type="radio"
+                  class="input-radio"
+                  id="input-texas"
+                  value="Texas"
+                  name="location"
+                />
+                <label for="input-texas" class="radio-label">Texas</label>
+              </fieldset>
+
+              <div class="cta-form-message">
+                <label class="cta-form-label" for="input-message"
+                  >Message <span class="label-required">*</span></label
+                >
+                <textarea
+                  id="input-message"
+                  class="input-message"
+                  rows="7"
+                  required
+                ></textarea>
+              </div>
+
+              <button class="btn btn-submit-form" type="submit">
+                Submit <i class="ph ph-paper-plane-right ph--top"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="grid grid--footer">
+          <div class="logo-col">
+            <a href="#header" class="footer-logo-link" aria-label="Link to top">
+              <!-- src="img/summitdoors2-logo.png" -->
+              <!-- <img
+                src="img/summitdoors2-logo.png"
+                class="footer-logo"
+                alt="Logo SummitDoors"
+            /> -->
+              <img
+                src="img/summitdoors-logo-min.png"
+                class="logo"
+                alt="Logo SummitDoors"
+              />
+            </a>
+            <ul class="social-links-list">
+              <li>
+                <a
+                  href="#"
+                  class="footer-socials-link"
+                  aria-label="Link to Whatsapp"
+                  ><i class="ph ph-facebook-logo social-icon"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer-socials-link"
+                  aria-label="Link to Whatsapp"
+                >
+                  <i class="ph ph-whatsapp-logo social-icon"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer-socials-link"
+                  aria-label="Link to Whatsapp"
+                  ><i class="ph ph-linkedin-logo social-icon"></i
+                ></a>
+              </li>
+            </ul>
+            <p class="copyright">
+              Copyright &copy; <span class="year">2026</span> by Summit Doors &
+              Hardware, Inc. All rights reserved.
+            </p>
+          </div>
+          <div class="addres-col">
+            <p class="footer-heading">Alaska Office</p>
+            <address class="contact-details">
+              <p class="address">7950 King St, Anchorage, AK 99518</p>
+              <p>
+                <a href="tel:+19075227757" class="footer-link"
+                  ><i class="ph ph-phone"></i> +1-907-522-7757</a
+                >
+                <!-- <br /> -->
+                <a
+                  href="mailto:info@summitdoors.net"
+                  class="footer-link"
+                  target="_blank"
+                  ><i class="ph ph-envelope-simple"></i> info@summitdoors.net</a
+                >
+              </p>
+            </address>
+          </div>
+          <div class="address-col">
+            <p class="footer-heading">Texas Office</p>
+            <address class="contact-details">
+              <p class="address">8133 Wickson Ridge Dr, Bryan, TX 77808</p>
+              <p>
+                <a href="tel:+19793258050" class="footer-link"
+                  ><i class="ph ph-phone"></i> +1-979-325-8050</a
+                >
+              </p>
+            </address>
+          </div>
+          <div class="nav-col">
+            <p class="footer-heading">Navigation</p>
+            <ul class="footer-nav">
+              <li><a href="index.html" class="footer-nav-link">Home</a></li>
+              <li><a href="#" class="footer-nav-link active">About</a></li>
+              <li>
+                <a href="products.html" class="footer-nav-link">Products</a>
+              </li>
+              <li><a href="#" class="footer-nav-link">Projects</a></li>
+              <li><a href="#" class="footer-nav-link">Contact</a></li>
+            </ul>
+          </div>
+          <!-- <div class="nav-col">
+            <p class="footer-heading">Resources</p>
+            <ul class="footer-nav">
+              <li><a href="#" class="footer-link">Contractors</a></li>
+              <li><a href="#" class="footer-link"></a></li>
+              <li><a href="#" class="footer-link"></a></li>
+            </ul>
+          </div> -->
+          <!-- ! COULD ADD OPENING HOURS ! -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- <a href="#section-cta" class="btn btn-estimate btn-fixed"
+      >Get An Estimate</a
+    > -->
+    <a href="#header" class="btn btn-up btn-fixed"
+      ><i class="ph ph-caret-up"></i>
+    </a>
+  </body>
+</html>
