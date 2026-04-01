@@ -94,6 +94,7 @@ obs.observe(sectionHeroEl);
 //   console.log("Page fully loaded!", e);
 // });
 
+//if it's already visible on pageload, add special class to get transition anyway
 const allSubHeaders = document.querySelectorAll(".subheading");
 
 const revealSubHeader = function (entries, observer) {

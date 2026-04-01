@@ -33,10 +33,22 @@
   visibility: hidden;
 }
 
+.editors-note-link {
+  color: #fff;
+}
+
 .contact-item:link,
 .contact-item:visited {
+  display: flex;
+  gap: 0.4rem;
   color: #f1f3f5;
   line-height: 1;
+}
+
+.contact-item:hover,
+.contact-item:active {
+  /* text-decoration: underline; */
+  border-bottom: 1px solid #fff;
 }
 
 .socials-link:link,
@@ -48,13 +60,8 @@
 
 .socials-link:hover,
 .socials-link:active {
-  text-decoration: none !important;
+  border-bottom: none;
   bottom: 2px;
-}
-
-.contact-item:hover,
-.contact-item:active {
-  text-decoration: underline;
 }
 
 .social-links-list {

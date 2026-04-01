@@ -7,18 +7,39 @@
 }
 
 .service-item {
+  /* justify-content: center; */
+  /* padding: */
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+  /* padding: 6.4rem 0; */
+  border: 2px solid #ddd;
+}
+
+.service-item.span-1 {
+  grid-column: span 1;
+
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
   align-items: center;
   justify-content: center;
-  /* padding: */
-  padding-top: 6.4rem;
-  padding-bottom: 6.4rem;
-  border: 2px solid #ddd;
+}
+
+.service-item.span-2 {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .service-icon {
   font-size: 6.4rem;
   color: #742722;
+  justify-self: center;
+  align-self: center;
+}
+
+.service-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  padding-bottom: 1.2rem;
 }

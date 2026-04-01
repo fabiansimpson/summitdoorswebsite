@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Summit Doors | Home</title>
 
     <link
       rel="stylesheet"
@@ -33,13 +33,15 @@
 
     <link rel="stylesheet" href="css/general-components.css" />
     <link rel="stylesheet" href="css/general-elements.css" />
-    <link rel="stylesheet" href="css/products.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/mediaquery.css" />
 
     <script defer src="js/script.js"></script>
+    <!-- <script defer src="js/slider.js"></script> -->
   </head>
   <body>
     <!--  HEADER (DONE)-->
+
     <header id="header">
       <div class="header-contact">
         <div class="header-contact-details container">
@@ -101,102 +103,97 @@
         <ul class="nav-items">
           <li><a href="/index.html" class="nav-item">Home</a></li>
           <li><a href="/about.html" class="nav-item">About us</a></li>
-          <li><a href="#" class="nav-item active">Products</a></li>
+          <li><a href="/products.html" class="nav-item">Products</a></li>
           <li><a href="#" class="nav-item">Projects</a></li>
-          <li><a href="/contact.html" class="nav-item">Contact</a></li>
+          <li><a href="#" class="nav-item" active>Contact</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
-      <section class="section-products section-bg js-hero-el">
-        <div class="container grid grid--2-cols">
-          <img src="/img/about--our-story-min.webp" class="img" />
-
-          <div class="text-block">
-            <h1 class="heading-primary page-heading margin-bottom-sm">
-              Products <br />
-              And<br />
-              services
-            </h1>
-            <small>Providing the best value since 1987</small>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-service">
-        <!-- section-bg -->
+      <section class="section-locations">
         <div class="container">
-          <h2 class="heading-secondary">What we offer</h2>
-          <!-- <span class="subheading">What we offer</span> -->
-          <!-- <h2 class="heading-secondary">Our service</h2> -->
-          <!-- <span class="subheading">Our services</span>
-        <h2 class="heading-secondary">What we guarantee</h2> -->
-          <div class="service-grid">
-            <div class="service-item span-1">
-              <i class="ph ph-buildings service-icon"></i>
-              <p class="service-title">Architectural Services</p>
-            </div>
-            <div class="service-item span-2">
-              <i class="ph ph-pencil-ruler service-icon"></i>
-              <div>
-                <p class="service-title">Building Specialties - Division 10</p>
-                <ul class="specialty-list">
-                  <li><i class="ph ph-minus"></i> Fire cabinets</li>
-                  <li><i class="ph ph-minus"></i> Fire extinguishers</li>
-                  <li><i class="ph ph-minus"></i> Toilet accessories</li>
-                </ul>
+          <span class="subheading">Locations</span>
+          <h2 class="heading-secondary">Serving Alaska and Texas</h2>
+          <div class="grid grid--2-cols">
+            <article class="location-item">
+              <div class="img-box">
+                <img
+                  src="/img/about--team-alaska-min.webp"
+                  class="location-img"
+                />
               </div>
-            </div>
-            <div class="service-item span-2">
-              <i class="ph ph-door service-icon"></i>
-              <div class="service-body">
-                <p class="service-title">
-                  Doors, Frames and Hardware - Division 8
+              <div class="location-body">
+                <p class="location-title">Regional Office Alaska</p>
+                <p class="location-address">
+                  7950 King St, Anchorage, AK 99518
                 </p>
-                <ul class="specialty-list">
-                  <li>
-                    <i class="ph ph-minus"></i>
-                    Steel Doors and frames
-                  </li>
-                  <li>
-                    <i class="ph ph-minus"></i>
-                    Specialty doors
-                  </li>
-                  <li>
-                    <i class="ph ph-minus"></i>
-                    Wood doors
-                  </li>
-                  <li>
-                    <i class="ph ph-minus"></i>
-                    Aluminum doors
-                  </li>
-                </ul>
+                <p class="location-links margin-bottom-md">
+                  <a href="tel:+19075227757" class="link"
+                    ><i class="ph ph-phone ph--mg-top"></i> +1-907-522-7757</a
+                  >
+
+                  <a
+                    href="mailto:info@summitdoors.net"
+                    class="link"
+                    target="_blank"
+                    ><i class="ph ph-envelope-simple ph--mg-top"></i>
+                    info@summitdoors.net</a
+                  >
+                </p>
+                <div class="embed-map-responsive">
+                  <div class="embed-map-container">
+                    <iframe
+                      class="embed-map-frame"
+                      frameborder="0"
+                      scrolling="no"
+                      marginheight="0"
+                      marginwidth="0"
+                      src="https://maps.google.com/maps?width=400&height=200&hl=en&q=7950%20King%20St%2C%20Anchorage%2C%20AK%2099518&t=&z=3&ie=UTF8&iwloc=B&output=embed"
+                    ></iframe>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="service-item span-1">
-              <i class="ph ph-circuitry service-icon"></i>
-              <p class="service-title">Electrified Hardware</p>
-            </div>
-            <!-- <div class="service-item">
-              <i><i class="ph ph-clock-clockwise service-icon"></i> </i>
-              <p class="service-title">Similique corporis</p>
-            </div>
-            <div class="service-item">
-              <i class="ph ph-magnifying-glass service-icon"></i>
-              <p class="service-title">quia aperiam</p>
-            </div>
-            <div class="service-item">
-              <i class="ph ph-pencil-ruler service-icon"></i>
-              <p class="service-title">adipisicing elit</p>
-            </div>
-            <div class="service-item">
-              <i><i class="ph ph-list-plus service-icon"></i> </i>
-              <p class="service-title">Similique corporis</p>
-            </div>
-            <div class="service-item">
-              <i class="ph ph-scroll service-icon"></i>
-              <p class="service-title">quia aperiam</p>
-            </div> -->
+            </article>
+            <article class="location-item">
+              <div class="img-box">
+                <img
+                  src="/img/about--team-texas-min.webp"
+                  class="location-img"
+                />
+              </div>
+              <div class="location-body">
+                <p class="location-title">Regional Office Texas</p>
+                <p class="location-address">
+                  8133 Wickson Ridge Dr, Bryan, TX 77808
+                </p>
+                <p class="location-links margin-bottom-md">
+                  <a href="tel:+19075227757" class="link"
+                    ><i class="ph ph-phone ph--mg-top"></i> +1-979-325-8050</a
+                  >
+
+                  <a
+                    href="mailto:info@summitdoors.net"
+                    class="link"
+                    target="_blank"
+                    ><i class="ph ph-envelope-simple ph--mg-top"></i>
+                    info@summitdoors.net</a
+                  >
+                </p>
+                <div class="embed-map-responsive">
+                  <div class="embed-map-container">
+                    <iframe
+                      class="embed-map-frame"
+                      frameborder="0"
+                      scrolling="no"
+                      marginheight="0"
+                      marginwidth="0"
+                      src="https://maps.google.com/maps?width=400&height=200&hl=en&q=8133%20Wickson%20Ridge%20Dr%2C%20Bryan%2C%20TX%2077808&t=&z=3&ie=UTF8&iwloc=B&output=embed"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -370,7 +367,6 @@
           <div class="addres-col">
             <p class="footer-heading">Alaska Office</p>
             <address class="contact-details">
-              <!-- <p class="open">Open monday to Friday 8:00 - 17:00</p> -->
               <p class="address">7950 King St, Anchorage, AK 99518</p>
               <p>
                 <a href="tel:+19075227757" class="footer-link"
@@ -389,8 +385,6 @@
           <div class="address-col">
             <p class="footer-heading">Texas Office</p>
             <address class="contact-details">
-              <!-- <p class="open">Open monday to friday 8:00 - 17:00</p> -->
-
               <p class="address">8133 Wickson Ridge Dr, Bryan, TX 77808</p>
               <p>
                 <a href="tel:+19793258050" class="footer-link"
@@ -403,8 +397,10 @@
             <p class="footer-heading">Navigation</p>
             <ul class="footer-nav">
               <li><a href="index.html" class="footer-nav-link">Home</a></li>
-              <li><a href="about.html" class="footer-nav-link">About</a></li>
-              <li><a href="#" class="footer-nav-link active">Products</a></li>
+              <li><a href="#" class="footer-nav-link active">About</a></li>
+              <li>
+                <a href="products.html" class="footer-nav-link">Products</a>
+              </li>
               <li><a href="#" class="footer-nav-link">Projects</a></li>
               <li><a href="#" class="footer-nav-link">Contact</a></li>
             </ul>
@@ -422,6 +418,9 @@
       </div>
     </footer>
 
+    <!-- <a href="#section-cta" class="btn btn-estimate btn-fixed"
+      >Get An Estimate</a
+    > -->
     <a href="#header" class="btn btn-up btn-fixed"
       ><i class="ph ph-caret-up"></i>
     </a>
