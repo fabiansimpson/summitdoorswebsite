@@ -1,13 +1,13 @@
 "use strict";
 
-function includeHTML() {
+function includeHTML(includeComponent) {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
   z = document.getElementsByTagName("*");
   for (i = 0; i < z.length; i++) {
     elmnt = z[i];
     /*search for elements with a certain attribute:*/
-    file = elmnt.getAttribute("include-header");
+    file = elmnt.getAttribute(includeComponent);
     if (file) {
       /*make an HTTP request using the attribute value as the file name:*/
       xhttp = new XMLHttpRequest();
@@ -20,7 +20,7 @@ function includeHTML() {
             elmnt.innerHTML = "Page not found.";
           }
           /*remove the attribute, and call this function once more:*/
-          elmnt.removeAttribute("include-header");
+          elmnt.removeAttribute(includeComponent);
           includeHTML();
         }
       };
@@ -31,7 +31,8 @@ function includeHTML() {
     }
   }
 }
-includeHTML();
+includeHTML("include-header");
+includeHTML("include-footer");
 
 const allLinks = document.querySelectorAll("a:link");
 
