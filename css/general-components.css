@@ -109,13 +109,6 @@
   border-bottom: 2px solid #742722;
 }
 
-.nav-item:link.active,
-.nav-item:visited.active {
-  color: #742722;
-  /* text-decoration: underline; */
-  border-bottom: 2px solid #742722;
-}
-
 /*************************************/
 /****************** CTA FORM ******************/
 /*************************************/

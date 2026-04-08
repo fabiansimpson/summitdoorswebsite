@@ -38,77 +38,18 @@
 
     <script defer src="js/script.js"></script>
     <!-- <script defer src="js/slider.js"></script> -->
+    <style>
+      .nav-contact:link,
+      .nav-contact:visited {
+        color: #742722;
+        /* text-decoration: underline; */
+        border-bottom: 2px solid #742722;
+      }
+    </style>
   </head>
   <body>
     <!--  HEADER (DONE)-->
-
-    <header id="header">
-      <div class="header-contact">
-        <div class="header-contact-details container">
-          <small class="header-note"
-            >Developer's note: Website is not yet responsive for smaller
-            screens.
-            <a
-              href="https://github.com/fabiansimpson/summitdoorswebsite/blob/main/README.md"
-              class="editors-note-link"
-              target="_blank"
-              >Click here for more info <i class="ph ph-arrow-right"></i> </a
-          ></small>
-          <a href="tel:+1-979-325-8050" class="contact-item"
-            ><i class="ph ph-phone"></i> +1-979-325-8050</a
-          >
-          <a
-            href="mailto:info@summitdoors.net"
-            class="contact-item"
-            target="_blank"
-            ><i class="ph ph-envelope-simple"></i> estimate@summitdoors.net</a
-          >
-          <ul class="social-links-list">
-            <li>
-              <a
-                href="#"
-                class="contact-item socials-link"
-                aria-label="Link to Whatsapp"
-              >
-                <i class="ph ph-whatsapp-logo social-icon"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="contact-item socials-link"
-                aria-label="Link to Whatsapp"
-                ><i class="ph ph-facebook-logo social-icon"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="contact-item socials-link"
-                aria-label="Link to Whatsapp"
-                ><i class="ph ph-linkedin-logo social-icon"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <nav class="header-nav">
-        <a href="index.html">
-          <img
-            src="img/summitdoors-logo-min.png"
-            class="logo"
-            alt="Logo SummitDoors"
-        /></a>
-        <ul class="nav-items">
-          <li><a href="/index.html" class="nav-item">Home</a></li>
-          <li><a href="/about.html" class="nav-item">About us</a></li>
-          <li><a href="/products.html" class="nav-item">Products</a></li>
-          <li><a href="#" class="nav-item">Projects</a></li>
-          <li><a href="#" class="nav-item" active>Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <header include-header="header.html"></header>
 
     <main>
       <section class="section-locations">

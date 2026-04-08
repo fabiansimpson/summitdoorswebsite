@@ -1,63 +1,87 @@
 /**************************/
-/* SECTION OUR STORY */
-/**************************/
-
-.about-us-description {
-  font-size: 1.6rem;
-  line-height: 1.6;
-  margin-bottom: 1.2rem;
-}
-
-.about-us-description:first-child::first-letter {
-  font-size: 6.4rem;
-  font-weight: 700;
-  color: #888;
-  line-height: 0;
-}
-.get-to-know-us-img {
-  justify-self: center;
-}
-
-.grid--values {
-  grid-template-columns: 50fr 45fr;
-}
-
-/**************************/
 /* SECTION OUR TEAM */
 /**************************/
 
-.section-our-team {
+/* .section-our-team {
   display: flex;
   flex-direction: column;
   gap: 8rem;
+} */
+.grid--row-gap-sm {
+  row-gap: 8rem;
+}
+
+.grid--container-sm {
+  max-width: 75%;
 }
 
 .card {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   background-color: #fff;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
   overflow: hidden;
-  align-self: stretch;
+  box-shadow: 0 0.6rem 4.8rem rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 1.6rem;
+  direction: ltr;
 }
 
 .card-img {
-  width: 100%;
+  max-width: 18rem;
 }
 
-.card-body {
-  text-align: center;
-  padding: 2.4rem;
+.card-horizontal {
+  grid-column: span 2;
+  display: flex;
+  justify-content: start;
 }
 
-.card-name {
-  font-size: 2.4rem;
+.card-horizontal .card-img {
+  border-radius: 50%;
+}
+
+.card-horizontal .card-body {
+  padding: 2.4rem 2.4rem;
+  padding-left: 3.6rem;
+}
+
+.card-horizontal .card-name {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.8rem;
+  text-transform: capitalize;
+}
+.card-horizontal .card-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+/*****************************************/
+/************ CARD VERTICAL **************/
+/*****************************************/
+
+.card-vertical {
+  padding-top: 2.4rem;
+}
+
+/* .card-vertical .card-img {
+} */
+
+.card-vertical .card-body {
+  padding: 2.4rem 1.2rem;
+  text-align: left;
+}
+
+.card-vertical .card-name {
+  font-size: 2rem;
   font-weight: 600;
   color: #333;
   text-transform: capitalize;
+  margin-bottom: 1.2rem;
 }
 
-.function {
+.card-description {
   font-size: 1.6rem;
   font-weight: 400;
   margin-top: 0.8rem;

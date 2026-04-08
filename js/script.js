@@ -1,26 +1,37 @@
 "use strict";
-// Smooth scrolling animation
-// const allLinks = document.querySelectorAll("a:link");
 
-// allLinks.forEach(function (link) {
-//   link.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     const href = link.getAttribute("href");
-
-//     //scroll back to top, just #
-//     if (href === "#")
-//       window.scrollTo({
-//         top: 0,
-//         behavior: "smooth",
-//       });
-//     if (href !== "#" && href.startsWith("#")) {
-//       const sectionEl = document.querySelector(href);
-//       sectionEl.scrollIntoView({ behavior: "smooth" });
-//     }
-//     if (link.classList.contains("main-nav-link"))
-//       headerEl.classList.remove("nav-open");
-//   });
-// });
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain attribute:*/
+    file = elmnt.getAttribute("include-header");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4) {
+          if (this.status == 200) {
+            elmnt.innerHTML = this.responseText;
+          }
+          if (this.status == 404) {
+            elmnt.innerHTML = "Page not found.";
+          }
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("include-header");
+          includeHTML();
+        }
+      };
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+}
+includeHTML();
 
 const allLinks = document.querySelectorAll("a:link");
 
@@ -63,6 +74,7 @@ allLinks.forEach(function (link) {
 // );
 
 // obs.observe(sectionHeroEl);
+
 const bodyEl = document.querySelector("body");
 const sectionHeroEl = document.querySelector(".js-hero-el");
 // const btnEl = document.querySelector(".btn-get-an-estimate--fixed");

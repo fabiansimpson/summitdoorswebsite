@@ -49,273 +49,232 @@ I gotta make some decisions to bring something to the table on tuesday. Doesn't 
     <link rel="stylesheet" href="css/mediaquery.css" />
 
     <script defer src="js/script.js"></script>
+    <style>
+      .nav-about:link,
+      .nav-about:visited {
+        color: #742722;
+        /* text-decoration: underline; */
+        border-bottom: 2px solid #742722;
+      }
+    </style>
   </head>
   <body>
     <!--  HEADER (DONE)-->
-    <header id="header">
-      <div class="header-contact">
-        <div class="header-contact-details container">
-          <small class="header-note"
-            >Developer's note: Website is not yet responsive for smaller
-            screens.
-            <a
-              href="https://github.com/fabiansimpson/summitdoorswebsite/blob/main/README.md"
-              class="editors-note-link"
-              target="_blank"
-              >Click here for more info <i class="ph ph-arrow-right"></i> </a
-          ></small>
-          <a href="tel:+1-979-325-8050" class="contact-item"
-            ><i class="ph ph-phone"></i> +1-979-325-8050</a
-          >
-          <a
-            href="mailto:info@summitdoors.net"
-            class="contact-item"
-            target="_blank"
-            ><i class="ph ph-envelope-simple"></i> estimate@summitdoors.net</a
-          >
-          <ul class="social-links-list">
-            <li>
-              <a
-                href="#"
-                class="contact-item socials-link"
-                aria-label="Link to Whatsapp"
-              >
-                <i class="ph ph-whatsapp-logo social-icon"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="contact-item socials-link"
-                aria-label="Link to Whatsapp"
-                ><i class="ph ph-facebook-logo social-icon"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="contact-item socials-link"
-                aria-label="Link to Whatsapp"
-                ><i class="ph ph-linkedin-logo social-icon"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <nav class="header-nav">
-        <a href="index.html">
-          <img
-            src="img/summitdoors-logo-min.png"
-            class="logo"
-            alt="Logo SummitDoors"
-        /></a>
-        <ul class="nav-items">
-          <li><a href="index.html" class="nav-item">Home</a></li>
-          <li><a href="#" class="nav-item active">About us</a></li>
-          <li><a href="products.html" class="nav-item">Products</a></li>
-          <li><a href="#" class="nav-item">Projects</a></li>
-          <li><a href="contact.html" class="nav-item">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <header include-header="header.html"></header>
 
     <main class="main">
-      <section class="section-our-story section-bg js-hero-el">
-        <div class="container grid grid--2-cols align-center">
-          <img src="/img/about--team-alaska-min.webp" class="img" />
-          <div class="text-block">
-            <h1 class="heading-primary page-heading margin-bottom-sm">
-              Our story
-            </h1>
-
-            <p class="about-us-description">
-              Stewart Barnes stated the company in 1987. He has strong
-              relationships with the GC’s in the Anchorage Market in Alaska.
-              Aarika, Stewarts daughter is the General Manager and Project
-              Manager here in the Texas Market.
-            </p>
-            <p class="about-us-description">
-              Our Primary market is College Station area, however we work with
-              Vaughn on a number of HHS and MDACC projects in Houston. We have
-              strong relationships with our
-              <a href="#" class="link">General Contractors</a> and are
-              recognized as highly involved in the projects.
-            </p>
+      <section class="section-our-team section-bg padding-lg">
+        <!-- <div class="section-header  padding-lg"> -->
+        <div class="container">
+          <div class="pad-left">
+            <!-- <span class="subheading">Who we are</span> -->
+            <!-- <h1 class="heading-secondary page-heading cap">Get to know us</h1> -->
+            <h1 class="heading-primary page-heading cap">Meet our team</h1>
           </div>
         </div>
+        <!-- </div> -->
       </section>
 
-      <section class="section-values">
+      <section class="section-leadership">
         <div class="container">
-          <div class="grid grid--values">
-            <div class="text-block">
-              <span class="subheading">Our mission</span>
-              <h2 class="heading-secondary">Summit Doors' core values</h2>
-
-              <p class="about-us-description margin-top-sm">
-                We see it as our responsibility to work on mitigating any Risk
-                you as the GC may encounter, by identifying risk related to
-                Doors, Frames and Hardware before they are encountered. We work
-                hard to get you the best value and a great long-term solution.
-              </p>
-              <!-- <p class="about-us-description">
-              Our Primary market is College Station area, however we work with
-              Vaughn on a number of HHS and MDACC projects in Houston. We have
-              strong relationships with our
-              <a href="#" class="link">General Contractors</a> and are
-              recognized as highly involved in the projects.
-            </p> -->
-            </div>
-            <img src="/img/about--team-texas-min.webp" class="img" />
-          </div>
-        </div>
-      </section>
-
-      <section class="section-our-team">
-        <div class="section-header section-bg padding-lg">
-          <div class="container">
-            <span class="subheading">Meet the team</span>
-            <h2 class="heading-secondary margin-bottom-none">Get to know us</h2>
-          </div>
-        </div>
-
-        <div class="container">
-          <h3 class="heading-tertiary center-text">Leadership</h3>
-
-          <div class="grid grid--4-cols padding-side">
-            <figure class="card">
-              <img src="img/leadership/uiface-2.jpg" class="card-img" />
+          <!-- <h2 class="heading-secondary text-left">Leadership</h2> -->
+          <div class="grid grid--3-cols grid--row-sm">
+            <figure class="card card-horizontal">
+              <img src="img/people/leadership/uiface-2.jpg" class="card-img" />
               <div class="card-body">
                 <h4 class="card-name">Jacob Chuck</h4>
-                <h5 class="function">Founder & President</h5>
+                <h5 class="card-title">President</h5>
+                <p class="card-description">Jacob@summitdoors.net</p>
+                <p class="card-description">+(747) 548 322 58</p>
               </div>
             </figure>
-            <figure class="card">
-              <img src="img/leadership/uiface-3.jpg" class="card-img" />
+            <figure class="card card-horizontal grid-end">
+              <img src="img/people/leadership/uiface-3.jpg" class="card-img" />
               <div class="card-body">
                 <h4 class="card-name">Olivia Bentley</h4>
-                <h5 class="function">Vice-president</h5>
+                <h5 class="card-title">Vice-president</h5>
+                <p class="card-description">Olivia@summitdoors.net</p>
+                <p class="card-description">+(747) 890 508 27</p>
               </div>
             </figure>
-            <figure class="card">
-              <img src="img/leadership/uiface-1.jpg" class="card-img" />
+            <figure class="card card-horizontal">
+              <img src="img/people/leadership/uiface-1.jpg" class="card-img" />
               <div class="card-body">
                 <h4 class="card-name">Evelyn Boston</h4>
-                <h5 class="function">General manager & Product manager</h5>
+                <h5 class="card-title">General manager & Product manager</h5>
+                <p class="card-description">Evelyn@summitdoors.net</p>
+                <p class="card-description">+(747) 387 366 53</p>
               </div>
             </figure>
-
-            <figure class="card">
-              <img src="img/leadership/uiface-4.jpg" class="card-img" />
-              <div class="card-body">
-                <h4 class="card-name">William McDonald</h4>
-                <h5 class="function">General manager</h5>
-              </div>
-            </figure>
-          </div>
-        </div>
-        <div class="section-bg">
-          <div class="container">
-            <span class="subheading">Alaska Office</span>
-            <div class="grid grid--2-cols padding-side">
-              <div class="padding-side">
-                <!-- <span class="subheading">Alaska Office</span> -->
-                <h3 class="heading-tertiary">Estimating</h3>
-
-                <!-- <div class="grid grid--3-cols grid--gap-sm"> -->
-                <div class="grid grid--2-cols">
-                  <figure class="card">
-                    <img src="img/leadership/uiface-1.jpg" class="card-img" />
-                    <div class="card-body">
-                      <h4 class="card-name">Evelyn Boston</h4>
-                      <!-- <h5 class="card-function">General manager & Product manager</h5> -->
-                    </div>
-                  </figure>
-                  <figure class="card">
-                    <img src="img/leadership/uiface-4.jpg" class="card-img" />
-                    <div class="card-body">
-                      <h4 class="card-name">Evelyn Boston</h4>
-                      <!-- <h5 class="card-function">General manager & Product manager</h5> -->
-                    </div>
-                  </figure>
-                </div>
-              </div>
-
-              <div class="padding-side">
-                <!-- <span class="subheading">Alaska Office</span> -->
-                <!-- <small><strong>Alaska Office</strong></small> -->
-                <h3 class="heading-tertiary">Project management</h3>
-                <div class="grid grid--2-cols">
-                  <figure class="card card-sm">
-                    <img src="img/leadership/uiface-1.jpg" class="card-img" />
-                    <div class="card-body">
-                      <h4 class="card-name">Evelyn Boston</h4>
-                      <!-- <h5 class="card-function">General manager & Product manager</h5> -->
-                    </div>
-                  </figure>
-                  <figure class="card">
-                    <img src="img/leadership/uiface-4.jpg" class="card-img" />
-                    <div class="card-body">
-                      <h4 class="card-name">Evelyn Boston</h4>
-                      <!-- <h5 class="card-function">General manager & Product manager</h5> -->
-                    </div>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <span class="subheading">Texas Office</span>
-          <div class="grid grid--2-cols padding-side">
-            <div class="padding-side">
-              <h3 class="heading-tertiary">Estimating</h3>
-
-              <!-- <div class="grid grid--3-cols grid--gap-sm"> -->
-              <div class="grid grid--2-cols">
-                <figure class="card">
-                  <img src="img/leadership/uiface-1.jpg" class="card-img" />
-                  <div class="card-body">
-                    <h4 class="card-name">Evelyn Boston</h4>
-                    <!-- <h5 class="card-function">General manager & Product manager</h5> -->
-                  </div>
-                </figure>
-                <figure class="card">
-                  <img src="img/leadership/uiface-4.jpg" class="card-img" />
-                  <div class="card-body">
-                    <h4 class="card-name">Evelyn Boston</h4>
-                    <!-- <h5 class="card-function">General manager & Product manager</h5> -->
-                  </div>
-                </figure>
-              </div>
-            </div>
-            <div class="padding-side">
-              <!-- <span class="subheading">Alaska Office</span> -->
-              <!-- <small><strong>Alaska Office</strong></small> -->
-              <h3 class="heading-tertiary">Project management</h3>
-              <div class="grid grid--2-cols padding-side">
-                <figure class="card card-sm">
-                  <img src="img/leadership/uiface-1.jpg" class="card-img" />
-                  <div class="card-body">
-                    <h4 class="card-name">Evelyn Boston</h4>
-                    <!-- <h5 class="card-function">General manager & Product manager</h5> -->
-                  </div>
-                </figure>
-                <figure class="card">
-                  <img src="img/leadership/uiface-4.jpg" class="card-img" />
-                  <div class="card-body">
-                    <h4 class="card-name">Evelyn Boston</h4>
-                    <!-- <h5 class="card-function">General manager & Product manager</h5> -->
-                  </div>
-                </figure>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      <!-- -->
+      <section class="section-estimating section-bg">
+        <div class="container">
+          <h2 class="heading-secondary text-left">Estimating</h2>
+
+          <div class="grid grid--3-cols grid--container-sm">
+            <figure class="card card-vertical">
+              <div class="text-center">
+                <!-- <img
+                  src="img/people/dd983d92-2d55-44a6-a35f-31dbaede4f052.png"
+                  class="card-img"
+                /> -->
+                <img src="img/people/face-man-1.jpg" class="card-img" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-name">Mathew Dawn</h4>
+                <p class="card-description">Bryan, Texas</p>
+                <p class="card-description">Mathew@summitdoors.net</p>
+              </div>
+            </figure>
+
+            <figure class="card card-vertical">
+              <div class="text-center">
+                <img src="img/people/face-woman-1.jpg" class="card-img" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-name">Josephine McCardy</h4>
+                <p class="card-description">Anchorage, Alaska</p>
+                <p class="card-description">Josephine@summitdoors.net</p>
+              </div>
+            </figure>
+
+            <figure class="card card-vertical">
+              <div class="text-center">
+                <img src="img/people/face-woman-2.jpg" class="card-img" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-name">Anne Damio</h4>
+                <p class="card-description">Anchorage, Alaska</p>
+                <p class="card-description">Josephine@summitdoors.net</p>
+              </div>
+            </figure>
+            <figure class="card card-vertical">
+              <div class="text-center">
+                <img src="img/people/face-man-2.jpg" class="card-img" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-name">Mathew Dawn</h4>
+                <p class="card-description">Bryan, Texas</p>
+                <p class="card-description">Mathew@summitdoors.net</p>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-project-management">
+        <div class="container flex-right">
+          <h2 class="heading-secondary text-right">Project management</h2>
+          <div class="grid grid--3-cols grid--rtl grid--container-sm">
+            <figure class="card card-vertical">
+              <div class="text-center">
+                <img src="img/people/face-man-2.jpg" class="card-img" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-name">Mathew Dawn</h4>
+                <p class="card-description">Bryan, Texas</p>
+                <p class="card-description">Mathew@summitdoors.net</p>
+              </div>
+            </figure>
+
+            <figure class="card card-vertical">
+              <div class="text-center">
+                <img src="img/people/face-man-3.jpg" class="card-img" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-name">William Cambrigde</h4>
+                <p class="card-description">Anchorage, Alaska</p>
+                <p class="card-description">William@summitdoors.net</p>
+              </div>
+            </figure>
+
+            <figure class="card card-vertical">
+              <div class="text-center">
+                <img src="img/people/face-woman-3.jpg" class="card-img" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-name">Anne Damio</h4>
+                <p class="card-description">Anchorage, Alaska</p>
+                <p class="card-description">Anne@summitdoors.net</p>
+              </div>
+            </figure>
+            <figure class="card card-vertical">
+              <div class="text-center">
+                <img src="img/people/face-woman-1.jpg" class="card-img" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-name">Josephine McCardy</h4>
+                <p class="card-description">Anchorage, Alaska</p>
+                <p class="card-description">Josephine@summitdoors.net</p>
+              </div>
+            </figure>
+            <figure class="card card-vertical">
+              <div class="text-center">
+                <img src="img/people/face-woman-2.jpg" class="card-img" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-name">Anne Damio</h4>
+                <p class="card-description">Anchorage, Alaska</p>
+                <p class="card-description">Josephine@summitdoors.net</p>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-purchasing section-bg">
+        <div class="container">
+          <h2 class="heading-secondary text-left">Purchasing</h2>
+
+          <div class="grid grid--3-cols grid--container-sm">
+            <figure class="card card-vertical">
+              <div class="text-center">
+                <img src="img/people/face-man-1.jpg" class="card-img" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-name">Mathew Dawn</h4>
+                <p class="card-description">Bryan, Texas</p>
+                <p class="card-description">Mathew@summitdoors.net</p>
+              </div>
+            </figure>
+
+            <figure class="card card-vertical">
+              <div class="text-center">
+                <img src="img/people/face-woman-1.jpg" class="card-img" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-name">Josephine McCardy</h4>
+                <p class="card-description">Anchorage, Alaska</p>
+                <p class="card-description">Josephine@summitdoors.net</p>
+              </div>
+            </figure>
+
+            <figure class="card card-vertical">
+              <div class="text-center">
+                <img src="img/people/face-woman-2.jpg" class="card-img" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-name">Anne Damio</h4>
+                <p class="card-description">Anchorage, Alaska</p>
+                <p class="card-description">Josephine@summitdoors.net</p>
+              </div>
+            </figure>
+            <figure class="card card-vertical">
+              <div class="text-center">
+                <img src="img/people/face-man-3.jpg" class="card-img" />
+              </div>
+              <div class="card-body">
+                <h4 class="card-name">William Cambrigde</h4>
+                <p class="card-description">Anchorage, Alaska</p>
+                <p class="card-description">William@summitdoors.net</p>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
 
       <section class="section-cta" id="section-cta">
         <div class="container">

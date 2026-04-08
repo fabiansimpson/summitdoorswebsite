@@ -56,204 +56,97 @@ Maybe:
 
     <script defer src="js/script.js"></script>
     <script defer src="js/slider.js"></script>
+
+    <style>
+      .nav-home:link,
+      .nav-home:visited {
+        color: #742722;
+        /* text-decoration: underline; */
+        border-bottom: 2px solid #742722;
+      }
+    </style>
   </head>
   <body>
     <!--  HEADER (DONE)-->
-
-    <header id="header">
-      <div class="header-contact">
-        <div class="header-contact-details container">
-          <small class="header-note"
-            >Developer's note: Website is not yet responsive for smaller
-            screens.
-            <a
-              href="https://github.com/fabiansimpson/summitdoorswebsite/blob/main/README.md"
-              class="editors-note-link"
-              target="_blank"
-              >Click here for more info <i class="ph ph-arrow-right"></i> </a
-          ></small>
-          <a href="tel:+1-979-325-8050" class="contact-item"
-            ><i class="ph ph-phone"></i> +1-979-325-8050</a
-          >
-          <a
-            href="mailto:info@summitdoors.net"
-            class="contact-item"
-            target="_blank"
-            ><i class="ph ph-envelope-simple"></i> estimate@summitdoors.net</a
-          >
-          <ul class="social-links-list">
-            <li>
-              <a
-                href="#"
-                class="contact-item socials-link"
-                aria-label="Link to Whatsapp"
-              >
-                <i class="ph ph-whatsapp-logo social-icon"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="contact-item socials-link"
-                aria-label="Link to Whatsapp"
-                ><i class="ph ph-facebook-logo social-icon"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="contact-item socials-link"
-                aria-label="Link to Whatsapp"
-                ><i class="ph ph-linkedin-logo social-icon"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <nav class="header-nav">
-        <a href="index.html">
-          <img
-            src="img/summitdoors-logo-min.png"
-            class="logo"
-            alt="Logo SummitDoors"
-        /></a>
-        <ul class="nav-items">
-          <li><a href="#" class="nav-item active">Home</a></li>
-          <li><a href="/about.html" class="nav-item">About us</a></li>
-          <li><a href="/products.html" class="nav-item">Products</a></li>
-          <li><a href="#" class="nav-item">Projects</a></li>
-          <li><a href="/contact.html" class="nav-item">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
+    <header include-header="header.html"></header>
     <!-- CONTENT -->
     <main class="main">
       <!-- HERO (DONE)-->
-      <section class="section-hero">
+      <section class="section-hero margin-bottom-none">
         <div class="hero-text-block js-hero-el">
-          <h1 class="heading-primary">Summit Doors & Hardware</h1>
+          <h1 class="heading-primary">Summit Doors & Hardware</h2>
           <!-- <i class="ph ph-minus"></i> (OR a minus sign: '-') -->
           <!-- <p class="hero-description">Best Value since 1982</p> -->
-          <p class="hero-description">reliable since 1987</p>
+          <p class="hero-description">reliable since 1990</p>
           <div class="hero-cta">
-            <a href="#section-cta" class="btn btn-hero-cta btn--primary"
-              >Get An Estimate</a
-            ><span class="cta-text">OR</span
-            ><a href="#about-us" class="btn btn-hero-cta">Learn more </a>
+            <a href="#section-cta" class="btn btn-hero-cta"
+              >Request a quote</a
+            >
+						<!-- <span class="cta-text">OR</span> -->
+						<!-- <a href="#about-us" class="btn btn-hero-cta">Learn more </a> -->
           </div>
         </div>
       </section>
 
-      <!-- HOW IT WORKS -->
-      <section class="section-how-it-works" id="how-it-works">
-        <div class="container">
-          <span class="subheading">How we work</span>
-          <h2 class="heading-secondary">
-            We provide what you need, in a few simple steps
-          </h2>
+      <section class="section-our-story section-bg padding-lg">
+        <div class="container grid grid--our-story align-center">
+          <img src="/img/about--team-alaska-min.webp" class="img" />
+          <div class="text-block">
+           <span class="subheading">About us</span>
+						<h2 class="heading-secondary margin-bottom-sm">
+              Our story
+            </h2>
 
-          <div class="grid grid--3-cols">
-            <div class="step-item">
-              <!-- I could make this a 2 by 2 for example and add a fourth step -->
-              <!-- <div class="text-box-head"></div> -->
-              <p class="step-number">01</p>
-              <h3 class="heading-tertiary">Qualification</h3>
-              <p class="step-description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Perferendis similique, fuga doloremque consequuntur ex
-                laudantium culpa fugiat delectus.
-              </p>
-            </div>
-            <div class="step-item">
-              <!-- <div class="text-box-head"></div> -->
-              <p class="step-number">02</p>
-              <!-- <h3 class="heading-tertiary">Placing your order</h3> -->
-              <h3 class="heading-tertiary">We order what you need</h3>
-              <p class="step-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. In vel
-                ullam vitae ab odio dolor sed voluptatem nemo, ea, tempore
-                doloremque? Blanditiis
-                <!-- For more information, see <a href="#" class="link">our products </a> -->
-              </p>
-            </div>
-            <div class="step-item">
-              <!-- <div class="text-box-head"></div> -->
-              <p class="step-number">03</p>
-              <!-- <h3 class="heading-tertiary">Delivery</h3> -->
-              <h3 class="heading-tertiary">Doors will be delivered</h3>
-              <p class="step-description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Perferendis similique, fuga doloremque consequuntur ex
-                laudantium culpa fugiat delectus recusandae ipsa itaque
-              </p>
-            </div>
-          </div>
-          <div class="margin-top-sm center-text">
-            <!-- <a href="products.html" class="link link-to-page"
-              >View our services
-              <i class="ph ph-arrow-right ph--mg-top"></i>
-            </a> -->
+            <p class="about-us-description">
+              Stewart Barnes stated the company in 1987. He has strong
+              relationships with the GC’s in the Anchorage Market in Alaska.
+              Aarika, Stewarts daughter is the General Manager and Project
+              Manager here in the Texas Market.
+            </p>
+            <p class="about-us-description">
+              Our Primary market is College Station area, however we work with
+              Vaughn on a number of HHS and MDACC projects in Houston. We have
+              strong relationships with our
+              <a href="#" class="link">General Contractors</a> and are
+              recognized as highly involved in the projects.
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="section-about-us section-bg" id="about-us">
+      <section class="section-values">
         <div class="container">
-          <div class="grid grid--45-55">
-            <div class="about-img-box">
-              <img src="img/door-hallway-min.webp" class="img--100 about-img" />
-            </div>
+          <div class="grid grid--values">
             <div class="text-block">
-              <span class="subheading">About us</span>
-              <h2 class="heading-secondary">
-                Specialized in door and window hardware
-              </h2>
-              <p class="about-description">
-                We are <strong>the</strong> Alaska and Texas specialty
-                contractor. with over <strong>40</strong> years of experience
-                and more than <strong>6 million</strong> dollars in revenue, we
-                stand for an efficient process, fast delivery, trusted
-                manufacturers and personal costumer service. With Summit Doors &
-                Hardware, you will get the best value.
-                <!-- Read here what our clients think of us. -->
-              </p>
-              <a href="about.html" class="link link-to-page margin-bottom-md"
-                >Get To Know Us <i class="ph ph-arrow-right ph--mg-top"></i>
-              </a>
-              <h3 class="heading-tertiary capitalize">What we offer you</h3>
+              <span class="subheading">Our mission</span>
+              <h2 class="heading-secondary italic">Summit Doors' core values</h2>
 
-              <ul class="specialty-list margin-bottom-xsm">
-                <li>
-                  <i class="ph ph-check"></i>
-                  Architectural services
-                  <!-- <i class="ph ph-arrow-right show-on-hover"></i> -->
-                </li>
-                <li>
-                  <!-- <a href="#"> -->
-                  <i class="ph ph-check"></i>
-                  Building specialties - Division 10
-                  <!-- <-- class="ph ph-arrow-right show-on-hover"></i> -->
-                  <!-- </a> -->
-                </li>
-                <li>
-                  <i class="ph ph-check"></i>
-                  Door, frames and hardware - Division 8
-                  <!-- <i class="ph ph-arrow-right show-on-hover"></i> -->
-                </li>
-                <li>
-                  <i class="ph ph-check"></i>
-                  Electrified hardware
-                  <!-- <i class="ph ph-arrow-right show-on-hover"></i> -->
-                </li>
-              </ul>
-              <a href="products.html" class="link link-to-page"
-                >Products and services
-                <i class="ph ph-arrow-right ph--mg-top"></i>
-              </a>
+              <p class="about-us-description margin-top-sm">
+                We see it as our responsibility to work on mitigating any Risk
+                you as the GC may encounter, by identifying risk related to
+                Doors, Frames and Hardware before they are encountered. We work
+                hard to get you the best value and a great long-term solution.
+              </p>
+              <!-- <p class="about-us-description">
+              Our Primary market is College Station area, however we work with
+              Vaughn on a number of HHS and MDACC projects in Houston. We have
+              strong relationships with our
+              <a href="#" class="link">General Contractors</a> and are
+              recognized as highly involved in the projects.
+            </p> -->
             </div>
+            <img src="/img/about--team-texas-min.webp" class="img" />
           </div>
+        </div>
+      </section>
+
+      <section class="section-meet-the-team section-bg ">
+        <div class="container">
+          <a href="/about.html" class="link"
+            ><h2 class="heading-special">Meet the team <i class="ph ph-arrow-right"></i>
+
+</h2> </a
+          >
         </div>
       </section>
 
@@ -275,103 +168,13 @@ Maybe:
         </div>
       </section>
 
-      <section class="section-testimonials">
-        <div class="container">
-          <span class="subheading">Testimonials</span>
-          <h2 class="heading-secondary margin-bottom-md">
-            What our clients say
-          </h2>
-          <div class="slider testimonials-carousel">
-            <div class="slide testimonial-item">
-              <div class="testimonial-header margin-bottom-sm">
-                <img src="/img/clients/customer-1.jpg" class="client-img" />
-                <div class="testimonial-title">
-                  <p class="testimonial-author">Maria de Almeida</p>
-                  <p class="author-company">EDP Commercial</p>
-                </div>
-              </div>
-
-              <blockquote class="testimonial-box">
-                <p class="testimonial-text margin-bottom-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deserunt nam officiirefgeroghregiuhs quis voluptatum sit
-                  facilis, architecto alias officia, ex adipisci eius aliquid
-                  fugit voluptas consequatur temporibus nesciunt delectus
-                  placeat veniam.
-                </p>
-              </blockquote>
-            </div>
-            <div class="slide testimonial-item">
-              <div class="testimonial-header margin-bottom-sm">
-                <img src="/img/clients/customer-2.jpg" class="client-img" />
-                <div class="testimonial-title">
-                  <p class="testimonial-author">Dave Bryson</p>
-                  <p class="author-company">Austin Carehomes</p>
-                </div>
-              </div>
-
-              <blockquote class="testimonial-box">
-                <p class="testimonial-text margin-bottom-sm">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Ducimus aliquid iste voluptate quibusdam alias magnam cumque
-                  rerum sequi earum, labore deserunt nostrum nisi consequatur
-                  nesciunt eius necessitatibus voluptatibus! Corrupti, ea.
-                </p>
-              </blockquote>
-            </div>
-            <div class="slide testimonial-item">
-              <div class="testimonial-header margin-bottom-sm">
-                <img src="/img/clients/customer-3.jpg" class="client-img" />
-                <div class="testimonial-title">
-                  <p class="testimonial-author">Hannah Smith</p>
-                  <p class="author-company">
-                    Director of Community College B.G.
-                  </p>
-                </div>
-              </div>
-
-              <blockquote class="testimonial-box">
-                <p class="testimonial-text margin-bottom-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                  officiis autem voluptates, fuga, porro debitis dolores aut
-                  architecto dignissimos ipsa sit distinctio excepturi delectus
-                  velit ad at ipsam corrupti incidunt?
-                </p>
-              </blockquote>
-            </div>
-            <div class="slide testimonial-item">
-              <div class="testimonial-header margin-bottom-sm">
-                <img src="/img/clients/customer-4.jpg" class="client-img" />
-                <div class="testimonial-title">
-                  <p class="testimonial-author">Ben Hadley</p>
-                  <p class="author-company">Doors & CO</p>
-                </div>
-              </div>
-
-              <blockquote class="testimonial-box">
-                <p class="testimonial-text margin-bottom-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                  officiis autem voluptates, fuga, porro debitis dolores aut
-                  architecto dignissimos ipsa sit distinctio excepturi delectus
-                  velit ad at ipsam corrupti incidunt?
-                </p>
-              </blockquote>
-            </div>
-            <button class="btn--caret btn--caret-left btn--slider-left">
-              <i class="ph ph-caret-left ph--mg-top"></i>
-            </button>
-            <button class="btn--caret btn--caret-right btn--slider-right">
-              <i class="ph ph-caret-right ph--mg-top"></i>
-            </button>
-          </div>
-        </div>
-      </section>
+      <!--  -->
 
       <section class="section-cta" id="section-cta">
         <div class="container">
           <div class="cta-form-box">
-            <span class="subheading">Contact us</span>
-            <h2 class="heading-secondary">Request an estimate</h2>
+            <span class="subheading">Contact</span>
+            <h2 class="heading-secondary cap">Request a quote</h2>
             <small
               >Developer's note: you can send any feedback through this form. It
               will be delivered to the developer.</small
@@ -594,7 +397,7 @@ Maybe:
     </footer>
 
     <a href="#section-cta" class="btn btn-estimate btn-fixed"
-      >Get An Estimate</a
+      >Request a quote</a
     >
     <a href="#header" class="btn btn-up btn-fixed"
       ><i class="ph ph-caret-up"></i>

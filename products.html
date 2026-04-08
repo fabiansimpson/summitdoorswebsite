@@ -37,6 +37,15 @@
     <link rel="stylesheet" href="css/mediaquery.css" />
 
     <script defer src="js/script.js"></script>
+    <script defer src="js/products-body.js"></script>
+    <style>
+      .nav-products:link,
+      .nav-products:visited {
+        color: #742722;
+        /* text-decoration: underline; */
+        border-bottom: 2px solid #742722;
+      }
+    </style>
   </head>
   <body>
     <!--  HEADER (DONE)-->
@@ -56,7 +65,7 @@
             ><i class="ph ph-phone"></i> +1-979-325-8050</a
           >
           <a
-            href="mailto:info@summitdoors.net"
+            href="mailto:estimate@summitdoors.net"
             class="contact-item"
             target="_blank"
             ><i class="ph ph-envelope-simple"></i> estimate@summitdoors.net</a
@@ -71,14 +80,14 @@
                 <i class="ph ph-whatsapp-logo social-icon"></i
               ></a>
             </li>
-            <li>
+            <!-- <li>
               <a
                 href="#"
                 class="contact-item socials-link"
                 aria-label="Link to Whatsapp"
                 ><i class="ph ph-facebook-logo social-icon"></i
               ></a>
-            </li>
+            </li> -->
             <li>
               <a
                 href="#"
@@ -99,107 +108,83 @@
             alt="Logo SummitDoors"
         /></a>
         <ul class="nav-items">
-          <li><a href="/index.html" class="nav-item">Home</a></li>
-          <li><a href="/about.html" class="nav-item">About us</a></li>
-          <li><a href="#" class="nav-item active">Products</a></li>
-          <li><a href="#" class="nav-item">Projects</a></li>
-          <li><a href="/contact.html" class="nav-item">Contact</a></li>
+          <li><a href="/index.html" class="nav-item nav-home">Home</a></li>
+          <li><a href="/about.html" class="nav-item nav-about">Our Team</a></li>
+          <li>
+            <a href="/products.html" class="nav-item nav-products"
+              >What we do</a
+            >
+          </li>
+          <li>
+            <a href="/contact.html" class="nav-item nav-contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
+
     <main>
-      <section class="section-products section-bg js-hero-el">
-        <div class="container grid grid--2-cols">
-          <img src="/img/about--our-story-min.webp" class="img" />
-
-          <div class="text-block">
-            <h1 class="heading-primary page-heading margin-bottom-sm">
-              Products <br />
-              And<br />
-              services
-            </h1>
-            <small>Providing the best value since 1987</small>
-          </div>
-        </div>
+      <section class="section-what-we-do section-bg padding-lg js-hero-el">
+        <h1 class="heading-primary page-heading cap">
+          Specialized in door and hardware
+        </h1>
       </section>
 
-      <section class="section-service">
-        <!-- section-bg -->
-        <div class="container">
-          <h2 class="heading-secondary">What we offer</h2>
-          <!-- <span class="subheading">What we offer</span> -->
-          <!-- <h2 class="heading-secondary">Our service</h2> -->
-          <!-- <span class="subheading">Our services</span>
-        <h2 class="heading-secondary">What we guarantee</h2> -->
-          <div class="service-grid">
-            <div class="service-item span-1">
-              <i class="ph ph-buildings service-icon"></i>
-              <p class="service-title">Architectural Services</p>
-            </div>
-            <div class="service-item span-2">
-              <i class="ph ph-pencil-ruler service-icon"></i>
-              <div>
-                <p class="service-title">Building Specialties - Division 10</p>
-                <ul class="specialty-list">
-                  <li><i class="ph ph-minus"></i> Fire cabinets</li>
-                  <li><i class="ph ph-minus"></i> Fire extinguishers</li>
-                  <li><i class="ph ph-minus"></i> Toilet accessories</li>
-                </ul>
-              </div>
-            </div>
-            <div class="service-item span-2">
-              <i class="ph ph-door service-icon"></i>
-              <div class="service-body">
-                <p class="service-title">
-                  Doors, Frames and Hardware - Division 8
-                </p>
-                <ul class="specialty-list">
-                  <li>
-                    <i class="ph ph-minus"></i>
-                    Steel Doors and frames
-                  </li>
-                  <li>
-                    <i class="ph ph-minus"></i>
-                    Specialty doors
-                  </li>
-                  <li>
-                    <i class="ph ph-minus"></i>
-                    Wood doors
-                  </li>
-                  <li>
-                    <i class="ph ph-minus"></i>
-                    Aluminum doors
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="service-item span-1">
-              <i class="ph ph-circuitry service-icon"></i>
-              <p class="service-title">Electrified Hardware</p>
-            </div>
-            <!-- <div class="service-item">
-              <i><i class="ph ph-clock-clockwise service-icon"></i> </i>
-              <p class="service-title">Similique corporis</p>
-            </div>
-            <div class="service-item">
-              <i class="ph ph-magnifying-glass service-icon"></i>
-              <p class="service-title">quia aperiam</p>
-            </div>
-            <div class="service-item">
-              <i class="ph ph-pencil-ruler service-icon"></i>
-              <p class="service-title">adipisicing elit</p>
-            </div>
-            <div class="service-item">
-              <i><i class="ph ph-list-plus service-icon"></i> </i>
-              <p class="service-title">Similique corporis</p>
-            </div>
-            <div class="service-item">
-              <i class="ph ph-scroll service-icon"></i>
-              <p class="service-title">quia aperiam</p>
-            </div> -->
+      <div class="products-body">
+        <aside class="side-menu products-menu">
+          <div class="menu-body">
+            <ul class="menu-list">
+              <li>
+                <a href="#architectural_services">Architectural Services</a>
+              </li>
+              <li><a href="#">Building Specialties</a></li>
+              <li><a href="#">Doors & Frames</a></li>
+              <li><a href="#">Electronics & Hardware</a></li>
+            </ul>
           </div>
-        </div>
-      </section>
+        </aside>
+
+        <section
+          class="section-architectural-services"
+          id="architectural_services"
+        >
+          <div class="container">
+            <span class="subheading">Architectural Services</span>
+            <h3 class="heading-tertiary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            </h3>
+            <p class="products-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+              veritatis placeat officia quos quaerat maiores natus reiciendis.
+              Vero ratione assumenda dolores, maiores nobis laudantium nesciunt
+              enim sit placeat veniam? Aliquid?
+            </p>
+          </div>
+        </section>
+        <section class="section-building-specialties section-bg">
+          <div class="container">
+            <span class="subheading">Building Specialties</span>
+            <h3 class="heading-tertiary">
+              labore ea quod harum dolores tenetur amet in.
+            </h3>
+          </div>
+        </section>
+        <section class="section-doors-frames">
+          <div class="container">
+            <span class="subheading">Doors & Frames</span>
+            <h3 class="heading-tertiary">
+              Culpa nihil ratione consequatur aliquam error sit incidunt
+            </h3>
+          </div>
+        </section>
+        <section class="section-hardware-keying section-bg">
+          <div class="container">
+            <span class="subheading">Electronics & Hardware</span>
+            <h3 class="heading-tertiary">
+              dolorum doloremque, ea perferendis officia.
+            </h3>
+          </div>
+        </section>
+      </div>
 
       <section class="section-cta" id="section-cta">
         <div class="container">
@@ -425,8 +410,8 @@
       </div>
     </footer>
 
-    <a href="#header" class="btn btn-up btn-fixed"
+    <!-- <a href="#header" class="btn btn-up btn-fixed"
       ><i class="ph ph-caret-up"></i>
-    </a>
+    </a> -->
   </body>
 </html>
