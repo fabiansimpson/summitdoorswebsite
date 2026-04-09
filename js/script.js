@@ -1,13 +1,14 @@
 "use strict";
 
 function includeHTML(includeComponent) {
-  var z, i, elmnt, file, xhttp;
+  var z, i, elmnt, file, wholeFile, xhttp;
   /*loop through a collection of all HTML elements:*/
   z = document.getElementsByTagName("*");
   for (i = 0; i < z.length; i++) {
     elmnt = z[i];
     /*search for elements with a certain attribute:*/
     file = elmnt.getAttribute(includeComponent);
+    wholeFile = `/${file}`;
     if (file) {
       /*make an HTTP request using the attribute value as the file name:*/
       xhttp = new XMLHttpRequest();
@@ -24,7 +25,7 @@ function includeHTML(includeComponent) {
           includeHTML();
         }
       };
-      xhttp.open("GET", file, true);
+      xhttp.open("GET", wholeFile, true);
       xhttp.send();
       /*exit the function:*/
       return;
