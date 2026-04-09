@@ -389,7 +389,7 @@ p a:visited {
   justify-content: space-between;
 }
 
-.grid--rtl {
+.dir--rtl {
   direction: rtl;
 }
 

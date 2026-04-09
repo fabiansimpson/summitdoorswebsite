@@ -13,6 +13,7 @@
 
 .grid--container-sm {
   max-width: 75%;
+  /* direction: ltr; */
 }
 
 .card {
@@ -21,7 +22,6 @@
   box-shadow: 0 0.6rem 4.8rem rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   padding: 1.6rem;
-  direction: ltr;
 }
 
 .card-img {
