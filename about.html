@@ -48,6 +48,12 @@ I gotta make some decisions to bring something to the table on tuesday. Doesn't 
     <link rel="stylesheet" href="css/about-us-page.css" />
     <link rel="stylesheet" href="css/mediaquery.css" />
 
+    <script
+      async
+      fetchpriority="high"
+      blocking="render"
+      src="js/include.js"
+    ></script>
     <script defer src="js/script.js"></script>
     <style>
       .nav-about:link,
@@ -64,15 +70,9 @@ I gotta make some decisions to bring something to the table on tuesday. Doesn't 
 
     <main class="main">
       <section class="section-our-team section-bg padding-lg js-hero-el">
-        <!-- <div class="section-header  padding-lg"> -->
         <div class="container">
-          <div class="pad-left">
-            <!-- <span class="subheading">Who we are</span> -->
-            <!-- <h1 class="heading-secondary page-heading cap">Get to know us</h1> -->
-            <h1 class="heading-primary page-heading cap">Meet our team</h1>
-          </div>
+          <h1 class="heading-primary page-heading cap">Meet our team</h1>
         </div>
-        <!-- </div> -->
       </section>
 
       <section class="section-leadership">
@@ -87,6 +87,7 @@ I gotta make some decisions to bring something to the table on tuesday. Doesn't 
                 <p class="card-description">stewartb@summitdoors.net</p>
               </div>
             </figure>
+
             <figure class="card card-horizontal grid-end">
               <img src="img/team/square/Aarika.PNG" class="card-img" />
               <div class="card-body">
@@ -95,6 +96,7 @@ I gotta make some decisions to bring something to the table on tuesday. Doesn't 
                 <p class="card-description">aarikam@summitdoors.net</p>
               </div>
             </figure>
+
             <figure class="card card-horizontal">
               <img src="img/team/square/Adam.jpeg" class="card-img" />
               <div class="card-body">
@@ -169,7 +171,7 @@ I gotta make some decisions to bring something to the table on tuesday. Doesn't 
                 <img src="img/team/square/dustin.jpg" class="card-img" />
               </div>
               <div class="card-body">
-                <h4 class="card-name">Dustin Godfrey<h4>
+                <h4 class="card-name">Dustin Godfrey</h4>
                 <p class="card-description">Texas Market</p>
                 <p class="card-description">dusting@summitdoors.net</p>
               </div>
@@ -182,9 +184,10 @@ I gotta make some decisions to bring something to the table on tuesday. Doesn't 
               <div class="card-body">
                 <h4 class="card-name">Travis Grygar</h4>
                 <p class="card-description">Texas Market</p>
-                <p class="card-description">travism@summitdoors.net</p>
+                <p class="card-description">travisg@summitdoors.net</p>
               </div>
             </figure>
+
             <figure class="card card-vertical">
               <div class="text-center">
                 <img src="img/people/face-man-1.jpg" class="card-img" />
@@ -195,6 +198,7 @@ I gotta make some decisions to bring something to the table on tuesday. Doesn't 
                 <p class="card-description">jacobc@placeholder.net</p>
               </div>
             </figure>
+
             <figure class="card card-vertical">
               <div class="text-center">
                 <img src="img/people/face-man-2.jpg" class="card-img" />
@@ -204,7 +208,8 @@ I gotta make some decisions to bring something to the table on tuesday. Doesn't 
                 <p class="card-description">Alaska Market</p>
                 <p class="card-description">mathewd@placeholder.net</p>
               </div>
-            </figure>            <figure class="card card-vertical">
+            </figure>
+            <figure class="card card-vertical">
               <div class="text-center">
                 <img src="img/people/face-man-3.jpg" class="card-img" />
               </div>
@@ -223,10 +228,6 @@ I gotta make some decisions to bring something to the table on tuesday. Doesn't 
           <div class="cta-form-box">
             <span class="subheading">Contact us</span>
             <h2 class="heading-secondary">Get in touch</h2>
-            <small
-              >Developer's note: you can send any feedback through this
-              form.</small
-            >
             <form
               class="cta-form"
               method="POST"
@@ -300,7 +301,9 @@ I gotta make some decisions to bring something to the table on tuesday. Doesn't 
                   value="Texas Market"
                   checked
                 />
-                <label for="input-alaska" class="radio-label">Texas Market</label>
+                <label for="input-alaska" class="radio-label"
+                  >Texas Market</label
+                >
 
                 <input
                   type="radio"
@@ -309,7 +312,9 @@ I gotta make some decisions to bring something to the table on tuesday. Doesn't 
                   name="location"
                   value="Alaska Market"
                 />
-                <label for="input-texas" class="radio-label">Alaska Market</label>
+                <label for="input-texas" class="radio-label"
+                  >Alaska Market</label
+                >
               </fieldset>
 
               <div class="cta-form-message">

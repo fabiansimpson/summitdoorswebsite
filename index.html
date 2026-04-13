@@ -54,8 +54,10 @@ Maybe:
     <link rel="stylesheet" href="css/home-page.css" />
     <link rel="stylesheet" href="css/mediaquery.css" />
 
-    <script defer src="js/script.js"></script>
-    <script defer src="js/slider.js"></script>
+    <script async fetchpriority="high" blocking="render" src="js/include.js"></script>
+    <script defer fetchpriority="low" src="js/script.js"></script>
+
+    <!-- <script defer src="js/slider.js"></script> -->
 
     <style>
       .nav-home:link,
