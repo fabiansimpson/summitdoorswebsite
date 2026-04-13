@@ -47,12 +47,13 @@ allLinks.forEach(function (link) {
       // headerEl.scrollIntoView({ behavior: "smooth" });
     } else if (href.startsWith("#")) {
       e.preventDefault();
+
       const sectionEl = document.querySelector(href);
+      if (!sectionEl) return;
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
   });
 });
-
 ///////////////////////////////////////////////////////////
 // Sticky navigation
 

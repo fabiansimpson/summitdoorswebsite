@@ -379,8 +379,19 @@ p a:visited {
   grid-template-columns: 45fr 55fr;
 }
 
+.grid--col-gap-xsm {
+  column-gap: 2.2rem;
+}
 .grid--col-gap-sm {
   column-gap: 4.8rem;
+}
+
+.grid--row-span-2 {
+  grid-row: span 2;
+}
+
+.grid .grid-end {
+  grid-column: 2 / span 2;
 }
 
 .justify-center {
@@ -397,10 +408,6 @@ p a:visited {
 
 .dir--rtl {
   direction: rtl;
-}
-
-.grid .grid-end {
-  grid-column: 2 / span 2;
 }
 
 .flex-right {

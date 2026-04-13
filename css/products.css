@@ -79,9 +79,22 @@ main ul {
   gap: 1.6rem;
 }
 
+main ul.icons li::before {
+  /* content: "-"; */
+  /* font-size: 0.4rem; */
+  /* width: 10px;
+  height: 10px; */
+  /* margin-right: 16px; */
+  /* vertical-align: top; */
+}
+
 main li {
   display: flex;
   align-items: start;
   gap: 0.8rem;
   list-style-type: none;
 }
+
+/* .gallery img {
+  object-fit: cover;
+} */

@@ -51,11 +51,12 @@
     <header include-header="header.html"></header>
 
     <main>
-      <section>
+      <section class="section-hero-el js-hero-el">
         <img src="/img/image002.jpg" class="img-what-we-do img--100" />
       </section>
       <section class="section--products">
         <div class="container">
+          <span class="subheading">What we do</span>
           <h2 class="heading-secondary">Specialized in doors and hardware</h2>
           <div class="tabs-container">
             <aside class="tabs-menu">
@@ -74,10 +75,15 @@
                   >
                 </li>
                 <li>
-                  <a href="#" class="tabs-link" data-tab="3">Doors & Frames</a>
+                  <a href="#doors-and-frames" class="tabs-link" data-tab="3"
+                    >Doors & Frames</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="tabs-link" data-tab="4"
+                  <a
+                    href="#electronics-and-hardware"
+                    class="tabs-link"
+                    data-tab="4"
                     >Electronics & Hardware</a
                   >
                 </li>
@@ -204,7 +210,7 @@
                   accusamus ipsam minima iusto consectetur? Corporis.
                 </p>
                 <h4 class="heading-paragraph">Doors & Frames</h4>
-                <div class="grid grid--3-cols">
+                <div class="grid grid--3-cols margin-bottom-sm">
                   <ul>
                     <li>Lorem ipsum dolor sit amet,</li>
                     <li>consectetur adipisicing elit.</li>
@@ -235,11 +241,18 @@
                     <li>cum sint quia eveniet maxime.</li>
                     <li>Similique, suscipit.</li>
                   </ul>
-                  <img src="img/door-hallway-min.webp" class="img--100" />
+                </div>
+                <div class="gallery grid grid--4-cols grid--col-gap-xsm">
+                  <img
+                    src="img/door-hallway-min.webp"
+                    class="img--100 grid--row-span-2"
+                  />
                   <img src="img/about--our-story-min.webp" class="img--100" />
                   <img src="img/IMG_1866.JPEG" class="img--100" />
+                  <img src="img/image001.jpg" class="img--100" />
                 </div>
               </article>
+
               <article class="tab-content tab-content--4">
                 <h3 class="heading-tertiary">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
