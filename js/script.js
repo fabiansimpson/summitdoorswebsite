@@ -79,7 +79,7 @@ allLinks.forEach(function (link) {
 // obs.observe(sectionHeroEl);
 
 const bodyEl = document.querySelector("body");
-const sectionHeroEl = document.querySelector(".js-hero-el");
+const sectionHeroEl = document.querySelector("header");
 // const btnEl = document.querySelector(".btn-get-an-estimate--fixed");
 
 const obs = new IntersectionObserver(
