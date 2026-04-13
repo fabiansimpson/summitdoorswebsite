@@ -69,6 +69,10 @@ strong {
   padding-right: 0.1rem;
 }
 
+p {
+  margin-bottom: 0.4rem;
+}
+
 .capitalize {
   text-transform: capitalize;
 }
@@ -310,7 +314,9 @@ p a:visited {
 .margin-top-md {
   margin-top: 5.6rem;
 }
-
+.margin-top-lg {
+  margin-top: 9.6rem;
+}
 .margin-bottom-none {
   margin-bottom: 0;
 }
