@@ -2,6 +2,10 @@
 /****** HEADER CONTACT (DONE) ************/
 /*****************************************/
 
+header {
+  position: relative;
+}
+
 .header-contact {
   background-color: #170807;
   width: 100%;
@@ -124,9 +128,23 @@
   border-bottom: 2px solid #742722;
 }
 
-/*************************************/
-/****************** CTA FORM ******************/
-/*************************************/
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+  z-index: 12;
+}
+
+.icon-mobile-nav {
+  font-size: 4.4rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="menu-close"] {
+  display: none;
+}
 
 /*************************************/
 /****************** CTA FORM ******************/

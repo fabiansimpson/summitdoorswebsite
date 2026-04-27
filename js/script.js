@@ -19,29 +19,6 @@ allLinks.forEach(function (link) {
     }
   });
 });
-///////////////////////////////////////////////////////////
-// Sticky navigation
-
-// const sectionHeroEl = document.querySelector(".section-hero");
-
-// const obs = new IntersectionObserver(
-//   function (entries) {
-//     const ent = entries[0];
-
-//     console.log(ent);
-//     if (ent.isIntersecting === false) headerEl.classList.add("sticky-bg");
-//     else if (ent.isIntersecting === true)
-//       headerEl.classList.remove("sticky-bg");
-//   },
-//   {
-//     // inside of the browser window
-//     root: null,
-//     threshold: 0,
-//     rootMargin: "-80px",
-//   },
-// );
-
-// obs.observe(sectionHeroEl);
 
 const bodyEl = document.querySelector("body");
 const sectionHeroEl = document.querySelector("header");
@@ -63,16 +40,6 @@ const obs = new IntersectionObserver(
 
 // obs.observe(sectionHeroEl)
 obs.observe(sectionHeroEl);
-
-////////////////////////////////
-// Lifecycle DOM Events
-////////////////////////////////
-// document.addEventListener("DOMContentLoaded", function (e) {
-//   console.log("HTML parsed and DOM tree built!", e);
-// });
-// window.addEventListener("load", function (e) {
-//   console.log("Page fully loaded!", e);
-// });
 
 //if it's already visible on pageload, add special class to get transition anyway
 const allSubHeaders = document.querySelectorAll(".subheading");
@@ -99,4 +66,14 @@ allSubHeaders.forEach(function (subHeader) {
   subHeaderObserver.observe(subHeader);
   //add all the element hidden classes in javscript so that users without javascript still see the elements
   subHeader.classList.add("element--hidden");
+});
+
+////////////////////////////////////////////////////////
+// Open and close navigation
+
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".main-header");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
 });

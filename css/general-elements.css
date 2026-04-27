@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  position: relative;
   /* font-family: "Rubik", sans-serif; */
   /* font-family: "Cinzel", sans-serif; */
   /* font-family: "Playfair Display", serif; */
@@ -20,6 +21,7 @@ body {
   line-height: 1;
   color: #333;
   /* color: #0c0403; */
+  overflow-x: hidden;
 }
 
 .logo {

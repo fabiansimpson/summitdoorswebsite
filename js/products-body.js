@@ -28,6 +28,8 @@ tabsNavigation.addEventListener("click", function (e) {
   document
     .querySelector(`.tab-content--${clicked.dataset.tab}`)
     .classList.add("tab-content--active");
+  document.querySelector(".section--products").scrollIntoView();
+  // Add an observer to make it only scroll when title is out of viewport
 });
 
 const checkForLink = function () {
