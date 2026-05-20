@@ -191,9 +191,6 @@
   /* padding-bottom: 0; */
 }
 
-.section-title {
-  text-align: center;
-}
 .heading-manufacturers {
   font-size: 2rem;
   font-family: "Cinzel";
@@ -205,6 +202,12 @@
 }
 .subheading {
   /* color: #333; */
+}
+
+.grid-rows {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 4rem;
 }
 
 .logos {
