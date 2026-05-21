@@ -69,8 +69,12 @@
 } */
 
 .card-vertical .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
   padding: 2.4rem 1.2rem;
   text-align: left;
+  /* align-items: flex-start; */
 }
 
 .card-vertical .card-name {
@@ -84,6 +88,6 @@
 .card-description {
   font-size: 1.6rem;
   font-weight: 400;
-  margin-top: 0.8rem;
+  /* margin-top: 0.8rem; */
   color: #888;
 }
