@@ -490,10 +490,10 @@ p a:visited {
 }
 
 .grid--our-story {
-  grid-template-columns: 45fr 50fr;
+  grid-template-columns: 40fr 60fr;
 }
 .grid--values {
-  grid-template-columns: 50fr 45fr;
+  grid-template-columns: 30fr 30fr;
 }
 
 .section-meet-the-team {

@@ -217,6 +217,11 @@
 
 .logos img {
   height: 3.2rem;
+
+  float: left;
+  width: 30rem;
+  height: 5rem;
+  object-fit: cover;
   /* filter: brightness(0); */
   /* filter: grayscale(100); */
   /* opacity: 70%; */
