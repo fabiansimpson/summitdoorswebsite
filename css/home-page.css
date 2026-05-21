@@ -1,18 +1,7 @@
 /* REUSABLE IN THE PAGE ... */
-
-.link-to-page:link,
-.link-to-page:visited {
-  font-size: 1.6rem;
-  /* margin-bottom: 5.6rem; */
-  /* text-transform: uppercase; */
-  transition: all 200ms;
-  border-bottom: 1px solid rgba(116, 39, 34, 0);
-  text-align: center;
-}
-
-.link-to-page:hover {
-  text-decoration: none;
-  border-bottom: 1px solid #742722;
+:root {
+  --primary-color: #742722;
+  --secondary-color: #f8f9fa;
 }
 
 /*************************************/
@@ -48,148 +37,55 @@
   margin-bottom: 4rem;
 }
 
-.ph-minus {
-  display: none;
-}
+/**************************/
+/* SECTION OUR STORY */
+/**************************/
 
-.hero-cta {
-  display: flex;
-  gap: 3rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.cta-text {
-  font-family: "Cinzel", serif;
-  text-transform: lowercase;
-  font-size: 2.4rem;
-  font-weight: 600;
-  color: #fff;
-  justify-content: center;
-}
-
-/* .btn-hero-cta:link,
-.btn-hero-cta:visited {
-  font-size: 1.6rem;
-  padding: 3.2rem 4.4rem;
-  border: none;
-  font-style: italic;
-  outline: none;
-  box-shadow: none;
-} */
-
-/* border: 2px solid #742722; */
-/* box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075); */
-/*************************************/
-/****************** HOW IT WORKS ******************/
-/*************************************/
-
-.step-item {
-  background-color: #f8f9fa;
-  border-radius: 2px;
-  padding: 3.2rem 4.4rem;
-}
-
-.step-number {
-  font-size: 8rem;
-  font-weight: 700;
-  color: #bbb;
-}
-
-.step-description {
-  font-size: 1.6rem;
-  line-height: 1.6;
-}
-
-/*************************************/
-/****************** ABOUT US ******************/
-/*************************************/
-
-.about--grid {
-  display: grid;
-  grid-template-columns: 45fr 54fr;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 8rem;
-}
-
-.about-img {
-  border: 2px solid #742722;
-  border-radius: 2px;
-}
-
-.about-text-box {
-  padding-top: 1.2rem;
-}
-
-.about-description {
+.about-us-description {
   font-size: 1.6rem;
   line-height: 1.6;
   margin-bottom: 1.2rem;
 }
 
-/* .specialty-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 0.8rem;
-  row-gap: 1.2rem;
-  list-style: none;
-  width: 100%;
+.about-us-description:first-child::first-letter {
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: #888;
+  line-height: 0;
+}
+.get-to-know-us-img {
+  justify-self: center;
 }
 
-.specialty-list li {
+.grid--our-story {
+  grid-template-columns: 40fr 60fr;
+}
+.grid--values {
+  grid-template-columns: 30fr 30fr;
+}
+
+.section-meet-the-team {
+  text-align: center;
+}
+
+.heading-special {
+  font-size: 4.4rem;
+  /* font-family: "Playfair Display", serif; */
+  font-style: italic;
+  text-transform: uppercase;
+  border: 2px solid #eee;
+  padding: 11.4rem 16rem;
+  background-color: #fff;
+}
+
+.place-center {
   display: flex;
-  font-size: 1.6rem;
-  line-height: 1.6;
-  border: 2px solid #ccc;
-} */
-
-/* .specialty-list li:first {
-  grid-row: span 1;
+  justify-content: center;
 }
-
-.specialty-list li:nth-child(2) {
-  grid-column: 2;
-  grid-row: 1 / span 2;
-}
-.specialty-list li:nth-child(3) {
-  grid-row: 2 / span 2;
-} */
-
-/* .specialty-list li a:link,
-.specialty-list li a:visited { */
-.specialty-list li,
-.specialty-list li {
-  /* display: flex; */
-  /* display: grid;
-  grid-template-columns: 1fr 8fr 1fr; */
-  /* color: #333; */
-  /* border: 2px solid #fff; */
-  /* background-color: #fff;
-  padding: 1.2rem 1.2rem;
-  cursor: text; */
-}
-
-.specialty-list li a:link .show-on-hover,
-.specialty-list li a:visited .show-on-hover {
-  position: relative;
-  opacity: 0;
-  left: -5px;
-  transition: all 300ms;
-}
-
-/* .specialty-list li a:hover .show-on-hover {
-  opacity: 1;
-  left: 0px;
-} */
 
 /**************************/
-/* LEADERSHIP SECTION */
+/* MANUFACTURERS SECTION */
 /**************************/
-
-.section-manufacturers {
-  /* padding: 4.4rem 0; */
-  /* padding-bottom: 0; */
-}
 
 .heading-manufacturers {
   font-size: 2rem;
@@ -199,9 +95,6 @@
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.7);
   padding-bottom: 5.6rem;
-}
-.subheading {
-  /* color: #333; */
 }
 
 .grid-rows {
@@ -216,15 +109,18 @@
 }
 
 .logos img {
+  /* max-width: 15.2rem; */
   height: 3.2rem;
+}
 
-  float: left;
-  width: 30rem;
-  height: 5rem;
-  object-fit: cover;
-  /* filter: brightness(0); */
-  /* filter: grayscale(100); */
-  /* opacity: 70%; */
+.more-manufacturers {
+  text-align: center;
+  color: rgba(51, 51, 51, 0.7);
+  font-family: "Cinzel";
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  /* font-weight: bold; */
 }
 
 /*************************************/
