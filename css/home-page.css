@@ -206,8 +206,8 @@
 
 .grid-rows {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 4rem;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 6rem;
 }
 
 .logos {
