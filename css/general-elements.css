@@ -75,12 +75,16 @@ p {
   margin-bottom: 0.4rem;
 }
 
-.capitalize {
-  text-transform: capitalize;
+.upp {
+  text-transform: uppercase !important;
+}
+
+.cap {
+  text-transform: capitalize !important;
 }
 
 .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .text-left {
@@ -142,10 +146,6 @@ p {
 
 .text-block {
   /* align-self: center; */
-}
-
-.cap {
-  text-transform: capitalize;
 }
 
 /*************************************/

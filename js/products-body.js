@@ -23,16 +23,21 @@ tabsNavigation.addEventListener("click", function (e) {
     t.classList.remove("tab-content--active");
   });
 
-  // Add active classes
+  // The active class is added
   clicked.classList.add("tabs-link--active");
   document
     .querySelector(`.tab-content--${clicked.dataset.tab}`)
     .classList.add("tab-content--active");
   document.querySelector(".section--products").scrollIntoView();
-  // Add an observer to make it only scroll when title is out of viewport
+  // Improvement: add an observer to make it only scroll when title is out of viewport
 });
 
 const checkForLink = function () {
+  tabs[0].classList.add("tabs-link--active");
+  document
+    .querySelector(`.tab-content--1`)
+    .classList.add("tab-content--active");
+
   tabs.forEach((el) => {
     if (document.URL === el.href) {
       tabs[0].classList.remove("tabs-link--active");
